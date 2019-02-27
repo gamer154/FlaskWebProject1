@@ -185,7 +185,7 @@ def snow_request():
 
 def CRauth():
     authurl = "http://localhost/v1/authentication"
-    data = {"Username": "demo2","Password": "Nimsoft1234"}
+    data = {"Username": "demo2","Password": "<password>"}
     data_json = json.dumps(data)
     headers = {'Content-Type':'application/json'}
     response = requests.post(authurl, data=data_json, headers=headers)
